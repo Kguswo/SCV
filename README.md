@@ -76,6 +76,9 @@
 <p>
   <img src="./exec/img/architecture.PNG" alt="architecture" width="600">
 </p>
+<p>
+      <img src="./exec/img/scv_architecture.png" alt="architecture" width="600">
+</p>
 
 ### ERD
 
