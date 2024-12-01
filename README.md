@@ -1,7 +1,7 @@
 [![Typing SVG](<https://readme-typing-svg.demolab.com?font=pretendard&weight=200&size=25&pause=1000&width=437&lines=SCV+(SSAFY+COMPUTER+VISION)+%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB>)](https://git.io/typing-svg)
 
-**2024.10.14 (월) ~ 2024.11.19 (화)**  
-**삼성 청년 소프트웨어 아카데미 11기 2학기 자율 프로젝트**
+**Samsung Software Academy For Youth - 자율 프로젝트**
+> **2024.10.14 (월) ~ 2024.11.19 (화)**  
 
 ## 팀원 구성
 
