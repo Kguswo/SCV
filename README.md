@@ -256,29 +256,29 @@
 >   5. **코드 생성 시스템**: 학습된 모델을 실행 가능한 파이썬 코드로 변환 (Github저장소에 업로드 처리) -> [업로드 예시 저장소 - scv-test repo](https://github.com/Kguswo/scv-test) , [업로드 예시 코드 - mnist.py](https://github.com/Kguswo/scv-test/blob/master/MNIST/mnist/model.py)
 
 > - ### 주요 구현 내용
-> - 1. 모델 빌더 시스템 - [neural_network_builder](https://github.com/Kguswo/SCV/tree/681a08fa555c8fea76b95794402b11962b7d1538/ai/fastapi/model_test/neural_network_builder)
+> - 1. 모델 빌더 시스템 - [neural_network_builder](https://github.com/Kguswo/SCV/tree/develop/ai/fastapi/model_test/neural_network_builder)
 >   - Pydantic을 활용한 강력한 레이어 검증 시스템으로 사용자 입력 오류 최소화
->   - Conv2D와 Linear 레이어 사이에 필요시 자동으로 Flatten 레이어 삽입하여 사용자 편의성 향상 - [_insert_flatten_layer](https://github.com/Kguswo/SCV/blob/681a08fa555c8fea76b95794402b11962b7d1538/ai/fastapi/model_test/neural_network_builder/builders/model_builder.py#L73)
+>   - Conv2D와 Linear 레이어 사이에 필요시 자동으로 Flatten 레이어 삽입하여 사용자 편의성 향상 - [_insert_flatten_layer](https://github.com/Kguswo/SCV/blob/develop/ai/fastapi/model_test/neural_network_builder/builders/model_builder.py#L73)
 >   - 컨볼루션, 풀링, 활성화 함수, 선형 레이어 등 다양한 PyTorch 레이어 지원
 >     
 > - 2. 데이터 처리 파이프라인
->   - 각 데이터셋 특성에 맞는 전용 전처리기 구현 (MNIST, FASHION_MNIST, CIFAR10, SVHN, EMNIST) - [preprocess](https://github.com/Kguswo/SCV/tree/681a08fa555c8fea76b95794402b11962b7d1538/ai/fastapi/model_train/datasets/preprocess)
+>   - 각 데이터셋 특성에 맞는 전용 전처리기 구현 (MNIST, FASHION_MNIST, CIFAR10, SVHN, EMNIST) - [preprocess](https://github.com/Kguswo/SCV/tree/develop/ai/fastapi/model_train/datasets/preprocess)
 >   - 확장성을 고려한 전처리기 팩토리 패턴 구현
->   - YAML 설정 파일을 통한 데이터셋별 전처리 파라미터 관리로 코드 변경 없이 설정 변경 가능 - [PreprocessorFactory](https://github.com/Kguswo/SCV/blob/681a08fa555c8fea76b95794402b11962b7d1538/ai/fastapi/model_train/datasets/preprocess/preprocessor_factory.py#L6)
+>   - YAML 설정 파일을 통한 데이터셋별 전처리 파라미터 관리로 코드 변경 없이 설정 변경 가능 - [PreprocessorFactory](https://github.com/Kguswo/SCV/blob/develop/ai/fastapi/model_train/datasets/preprocess/preprocessor_factory.py#L6)
 >     
 > - 3. 모델 저장 및 관리 시스템
 >   - MinIO를 활용한 클라우드 기반 모델 저장소 구현
 >   - 모델 메타데이터 관리 및 버전 관리 지원
->   - 로컬 캐싱 메커니즘으로 성능 최적화 - [inference_handler.py](https://github.com/Kguswo/SCV/blob/681a08fa555c8fea76b95794402b11962b7d1538/ai/fastapi/model_train/inference/inference_handler.py#L61)
+>   - 로컬 캐싱 메커니즘으로 성능 최적화 - [inference_handler.py](https://github.com/Kguswo/SCV/blob/develop/ai/fastapi/model_train/inference/inference_handler.py#L61)
 >     
 > - 4. 커스텀 데이터 추론 시스템
 >   - FastAPI 기반의 모델 추론 API 구현
->   - 사용자 업로드 이미지에 대한 전처리 및 예측값 도출 테스트 - [inference_routes.py](https://github.com/Kguswo/SCV/blob/681a08fa555c8fea76b95794402b11962b7d1538/ai/fastapi/model_train/api/routes/inference_routes.py#L63)
+>   - 사용자 업로드 이미지에 대한 전처리 및 예측값 도출 테스트 - [inference_routes.py](https://github.com/Kguswo/SCV/blob/develop/ai/fastapi/model_train/api/routes/inference_routes.py#L63)
 >   - 다양한 오류 상황에 대응하는 세분화된 예외 처리 시스템
 >     
 > - 5. 코드 생성 시스템
 >   - 학습된 PyTorch 모델의 구조를 분석하여 파라미터 추출
->   - 모델을 실행 가능한 독립적인 파이썬 코드로 변환 [model_code_generator.py](https://github.com/Kguswo/SCV/blob/681a08fa555c8fea76b95794402b11962b7d1538/ai/fastapi/model_test/neural_network_builder/builders/model_code_generator.py)
+>   - 모델을 실행 가능한 독립적인 파이썬 코드로 변환 [model_code_generator.py](https://github.com/Kguswo/SCV/blob/develop/ai/fastapi/model_test/neural_network_builder/builders/model_code_generator.py)
 >   - GitHub 저장소로 내보내기 기능 지원 ([업로드 예시 저장소](https://github.com/Kguswo/scv-test), [업로드 예시 코드](https://github.com/Kguswo/scv-test/blob/master/MNIST/mnist/model.py))
 
 > - ### 주요 기술적 특징
