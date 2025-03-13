@@ -1,7 +1,7 @@
 [![Typing SVG](<https://readme-typing-svg.demolab.com?font=pretendard&weight=200&size=25&pause=1000&width=437&lines=SCV+(SSAFY+COMPUTER+VISION)+%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB>)](https://git.io/typing-svg)
 
-**2024.10.14 (월) ~ 2024.11.19 (화)**  
-**삼성 청년 소프트웨어 아카데미 11기 2학기 자율 프로젝트**
+**Samsung Software Academy For Youth - 자율 프로젝트**
+> **2024.10.14 (월) ~ 2024.11.19 (화)**  
 
 ## 팀원 구성
 
@@ -74,7 +74,10 @@
 
 <hr>
 <p>
-  <img src="./exec/img/architecture.png" alt="architecture" width="600">
+  <img src="./exec/img/architecture.PNG" alt="architecture" width="600">
+</p>
+<p>
+      <img src="./exec/img/scv_architecture.png" alt="architecture" width="600">
 </p>
 
 ### ERD
@@ -238,10 +241,69 @@
 
 ## 후기
 
-**현재**
+**현재 (본인)**
 
-> - python, ML, Fastapi 학습을 할 수 있는 경험이었습니다.
-> - 딥러닝 모델에 대한 학습을 할 수 있었습니다.
+> - 이번 프로젝트에서 AI/BE 파트를 담당하며 `Python`, `Machine Learning`, `Fastapi` 학습을 하였고, 그리고 `DeepLearning Model`과 각 `Layer`에 대한 이해도를 향상시킬 수 있었습니다. 
+> - 사용자가 직관적으로 딥러닝 모델을 구성할 수 있도록 하는 `블록코딩 인터페이스`의 백엔드를 구현하면서 복잡한 기술을 단순화하여 접근성을 높이는 것의 가치를 경험했습니다.
+> - 객체지향 설계, 디자인패턴 적용, 확장성 있는 아키텍처 등 소프트웨어 공학적 측면에서도 많은 성장이 있었으며, 팀원들과의 협업을 통해 효율적인 커뮤니케이션과 문제 해결 방법에 대해 배울 수 있었습니다.
+> - MLOps 관련 도구 (MinIO, Milvus)를 활용해보며 실제 프로덕션 환경에서의 모델 관리 방법에 대한 이해도를 높일 수 있었습니다.
+
+> - ### 주요 구현 사항은 다음과 같습니다.
+>   1. **모델 빌더 시스템**: JSON 형태의 블록 코딩 구성을 실제 PyTorch 모델로 변환
+>   2. **데이터 처리 파이프라인**: MNIST, FASHION_MNIST 등 다양한 데이터셋에 특화된, 확장성을 고려한 전처리 시스템
+>   3. **모델 저장 및 관리 시스템**: MinIO를 활용한 모델 저장 및 캐싱 메커니즘
+>   4. **커스텀 데이터 추론 시스템**: 사용자 업로드 이미지에 대한 테스트 환경 구축, 예측값 처리
+>   5. **코드 생성 시스템**: 학습된 모델을 실행 가능한 파이썬 코드로 변환 (Github저장소에 업로드 처리) -> [업로드 예시 저장소 - scv-test repo](https://github.com/Kguswo/scv-test) , [업로드 예시 코드 - mnist.py](https://github.com/Kguswo/scv-test/blob/master/MNIST/mnist/model.py)
+
+> - ### 주요 구현 내용
+> - 1. 모델 빌더 시스템 - [neural_network_builder](https://github.com/Kguswo/SCV/tree/681a08fa555c8fea76b95794402b11962b7d1538/ai/fastapi/model_test/neural_network_builder)
+>   - Pydantic을 활용한 강력한 레이어 검증 시스템으로 사용자 입력 오류 최소화
+>   - Conv2D와 Linear 레이어 사이에 필요시 자동으로 Flatten 레이어 삽입하여 사용자 편의성 향상 - [_insert_flatten_layer](https://github.com/Kguswo/SCV/blob/681a08fa555c8fea76b95794402b11962b7d1538/ai/fastapi/model_test/neural_network_builder/builders/model_builder.py#L73)
+>   - 컨볼루션, 풀링, 활성화 함수, 선형 레이어 등 다양한 PyTorch 레이어 지원
+>     
+> - 2. 데이터 처리 파이프라인
+>   - 각 데이터셋 특성에 맞는 전용 전처리기 구현 (MNIST, FASHION_MNIST, CIFAR10, SVHN, EMNIST) - [preprocess](https://github.com/Kguswo/SCV/tree/681a08fa555c8fea76b95794402b11962b7d1538/ai/fastapi/model_train/datasets/preprocess)
+>   - 확장성을 고려한 전처리기 팩토리 패턴 구현
+>   - YAML 설정 파일을 통한 데이터셋별 전처리 파라미터 관리로 코드 변경 없이 설정 변경 가능 - [PreprocessorFactory](https://github.com/Kguswo/SCV/blob/681a08fa555c8fea76b95794402b11962b7d1538/ai/fastapi/model_train/datasets/preprocess/preprocessor_factory.py#L6)
+>     
+> - 3. 모델 저장 및 관리 시스템
+>   - MinIO를 활용한 클라우드 기반 모델 저장소 구현
+>   - 모델 메타데이터 관리 및 버전 관리 지원
+>   - 로컬 캐싱 메커니즘으로 성능 최적화 - [inference_handler.py](https://github.com/Kguswo/SCV/blob/681a08fa555c8fea76b95794402b11962b7d1538/ai/fastapi/model_train/inference/inference_handler.py#L61)
+>     
+> - 4. 커스텀 데이터 추론 시스템
+>   - FastAPI 기반의 모델 추론 API 구현
+>   - 사용자 업로드 이미지에 대한 전처리 및 예측값 도출 테스트 - [inference_routes.py](https://github.com/Kguswo/SCV/blob/681a08fa555c8fea76b95794402b11962b7d1538/ai/fastapi/model_train/api/routes/inference_routes.py#L63)
+>   - 다양한 오류 상황에 대응하는 세분화된 예외 처리 시스템
+>     
+> - 5. 코드 생성 시스템
+>   - 학습된 PyTorch 모델의 구조를 분석하여 파라미터 추출
+>   - 모델을 실행 가능한 독립적인 파이썬 코드로 변환 [model_code_generator.py](https://github.com/Kguswo/SCV/blob/681a08fa555c8fea76b95794402b11962b7d1538/ai/fastapi/model_test/neural_network_builder/builders/model_code_generator.py)
+>   - GitHub 저장소로 내보내기 기능 지원 ([업로드 예시 저장소](https://github.com/Kguswo/scv-test), [업로드 예시 코드](https://github.com/Kguswo/scv-test/blob/master/MNIST/mnist/model.py))
+
+> - ### 주요 기술적 특징
+> - 1. 객체지향 설계
+>   - 각 기능별로 명확한 책임을 가진 클래스로 시스템 구조화
+>   - 추상 클래스와 인터페이스를 활용한 확장성 있는 설계
+>   - 팩토리 패턴, 빌더 패턴 등 디자인 패턴 적절히 활용
+> - 2. 데이터 검증
+>   - Pydantic을 활용한 강력한 입력 검증
+>   - 각 레이어 타입별 필수 파라미터와 검증 규칙 정의
+>     ```python
+>     class Conv2d(BaseModel):
+>        name: Literal["Conv2d"]
+>        in_channels: int = Field(gt=0)
+>        out_channels: int = Field(gt=0)
+>        kernel_size: int = Field(gt=0)
+>    
+>        @field_validator('kernel_size', 'stride')
+>        @classmethod
+>        def validate_positive(cls, v: int, info) -> int:
+>            if v <= 0:
+>                raise ValueError(f'{info.field_name} 는 양수여야 합니다.')
+>            return v
+>     ```
+
 
 **서현**
 
