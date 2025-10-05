@@ -1,64 +1,9 @@
 [![Typing SVG](<https://readme-typing-svg.demolab.com?font=pretendard&weight=200&size=25&pause=1000&width=437&lines=SCV+(SSAFY+COMPUTER+VISION)+%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB>)](https://git.io/typing-svg)
 
-**Samsung Software Academy For Youth - 자율 프로젝트**
+<!-- **Samsung Software Academy For Youth - 자율 프로젝트** -->
 > **2024.10.14 (월) ~ 2024.11.19 (화)**  
 
-## 팀원 구성
-
-<table style="width: 100%; text-align: center; border-collapse: collapse;">
-    <tr>
-        <td>
-            <a href="https://github.com/Kguswo" target="_blank">
-                <img src="https://avatars.githubusercontent.com/u/156046839?v=4" alt="@Kguswo" style="width:100px;"/>
-            </a>
-            <br>
-            <strong>김현재</strong>
-        </td>
-        <td>
-            <a href="https://github.com/clare-u" target="_blank">
-                <img src="https://avatars.githubusercontent.com/u/156143681?v=4" alt="@clare-u" style="width:100px;"/>
-            </a>
-            <br>
-            <strong>유서현</strong>
-        </td>
-        <td>
-            <a href="https://github.com/FickleBoBo" target="_blank">
-                <img src="https://avatars.githubusercontent.com/u/95597182?v=4" alt="@FickleBoBo" style="width:100px;"/>
-            </a>
-            <br>
-            <strong>육민우👑</strong>
-        </td>
-        <td>
-            <a href="https://github.com/yngbao97" target="_blank">
-                <img src="https://avatars.githubusercontent.com/u/156047141?v=4" alt="@yngbao97" style="width:100px;"/>
-            </a>
-            <br>
-            <strong>육예진</strong>
-        </td>
-        <td>
-            <a href="https://github.com/doongyeop" target="_blank">
-                <img src="https://avatars.githubusercontent.com/u/164111972?v=4" alt="@doongyeop" style="width:100px;"/>
-            </a>
-            <br>
-            <strong>이동엽</strong>
-        </td>
-        <td>
-            <a href="https://github.com/Dohyungh" target="_blank">
-                <img src="https://avatars.githubusercontent.com/u/156046498?v=4" alt="@Dohyungh" style="width:100px;"/>
-            </a>
-            <br>
-            <strong>한도형</strong>
-        </td>
-    </tr>
-    <tr>
-        <td><strong>AI/BE</strong></td>
-        <td><strong>FE/DESIGN</strong></td>
-        <td><strong>BE</strong></td>
-        <td><strong>INFRA/DESIGN</strong></td>
-        <td><strong>BE</strong></td>
-        <td><strong>AI/INFRA/FE</strong></td>
-    </tr>
-</table>
+<br/>
 
 ## 기획 배경
 
@@ -145,22 +90,23 @@
 </p>
 
 - `랜딩 페이지`에는 플랫폼에 대한 간단한 설명이 포함되어 있습니다.
-<br><br>
+<br/>
+
 <p>
-  <img src="./exec/img/2-1로그인.gif" alt="로그인" width="600">
-</p>
-<p>
-  <img src="./exec/img/2-2로그아웃.gif" alt="로그아웃" width="600">
+  <img src="./exec/img/2-1로그인.gif" alt="로그인" width="600"><img src="./exec/img/2-2로그아웃.gif" alt="로그아웃" width="600">
 </p>
 
 - 사용자는 `Github OAuth`를 통해 로그인/로그아웃 할 수 있습니다.
-<br><br>
+<br/>
+
 <p>
   <img src="./exec/img/3연동.gif" alt="연동" width="600">
 </p>
 
-- 사용자는 `Github`의 새로운 레포지토리와 연동 또는 기존의 레포지토리와 연동할 수 있습니다. - 연동 이후 `연동해제`버튼을 통해 연동 해제 가능합니다.
-  <br><br>
+- 사용자는 `Github`의 새로운 레포지토리와 연동 또는 기존의 레포지토리와 연동할 수 있습니다.
+- 연동 이후 `연동해제`버튼을 통해 연동 해제 가능합니다.
+
+<br/>
 
 ### 2. 워크스페이스
 
@@ -168,13 +114,19 @@
   <img src="./exec/img/4워크스페이스.gif" alt="워크스페이스" width="600">
 </p>
 
-- **검색 및 필터링 시스템** - 다양한 `필터링 옵션`을 제공하여 모델 조회가 가능합니다. - 데이터셋 (MNIST 외 4개) - 수정일/생성일 기준 정렬 - 모델명 검색 - 완료 / 임시저장 상태
+- **검색 및 필터링 시스템** - 다양한 `필터링 옵션`을 제공하여 모델 조회가 가능합니다.
+  - 데이터셋 (MNIST 외 4개)
+  - 수정일/생성일 기준 정렬
+  - 모델명 검색
+  - 완료 / 임시저장 상태
+
 <br><br>
 <p>
   <img src="./exec/img/5새로만들기.gif" alt="새로만들기" width="600">
 </p>
 
-- **새로 만들기** - 모델 이름 설정과 데이터 지정 후 모델을 제작할 수 있습니다.
+- **새로 만들기**
+- 모델 이름 설정과 데이터 지정 후 모델을 제작할 수 있습니다.
   <br><br>
 
 ### 3. 블록코딩
@@ -183,7 +135,12 @@
   <img src="./exec/img/6블록코딩.gif" alt="블록코딩" width="600">
 </p>
 
-- **블록 코딩**: 드래그 앤 드롭으로 블록을 옮기고 파라미터들을 작성해 블록 코딩이 가능합니다. - **휴지통**: 블록을 삭제합니다. - **저장**: 저장 버튼을 통해 작업 중 저장이 가능합니다. - **실행**: - **실행 이전 저장**: 실행 전 자동 저장 기능을 제공합니다. - **유효성 검증**: 파라미터 값에 이상이 있을 시 실행 전 유효성 검사를 시행합니다. - **코드뷰 & 정확도**: 실행 이후 블록을 코드로 변환하여 보여줍니다.
+- **블록 코딩**: 드래그 앤 드롭으로 블록을 옮기고 파라미터들을 작성해 블록 코딩이 가능합니다.
+- **휴지통**: 블록을 삭제합니다.
+- **저장**: 저장 버튼을 통해 작업 중 저장이 가능합니다.
+- **실행**: - **실행 이전 저장**: 실행 전 자동 저장 기능을 제공합니다.
+- **유효성 검증**: 파라미터 값에 이상이 있을 시 실행 전 유효성 검사를 시행합니다.
+- **코드뷰 & 정확도**: 실행 이후 블록을 코드로 변환하여 보여줍니다.
 <br><br>
 <p>
   <img src="./exec/img/7테스트.gif" alt="테스트" width="600">
@@ -248,14 +205,14 @@
 > - 객체지향 설계, 디자인패턴 적용, 확장성 있는 아키텍처 등 소프트웨어 공학적 측면에서도 많은 성장이 있었으며, 팀원들과의 협업을 통해 효율적인 커뮤니케이션과 문제 해결 방법에 대해 배울 수 있었습니다.
 > - MLOps 관련 도구 (MinIO, Milvus)를 활용해보며 실제 프로덕션 환경에서의 모델 관리 방법에 대한 이해도를 높일 수 있었습니다.
 
-> - ### 주요 구현 사항은 다음과 같습니다.
+### 주요 구현 사항은 다음과 같습니다.
 >   1. **모델 빌더 시스템**: JSON 형태의 블록 코딩 구성을 실제 PyTorch 모델로 변환
 >   2. **데이터 처리 파이프라인**: MNIST, FASHION_MNIST 등 다양한 데이터셋에 특화된, 확장성을 고려한 전처리 시스템
 >   3. **모델 저장 및 관리 시스템**: MinIO를 활용한 모델 저장 및 캐싱 메커니즘
 >   4. **커스텀 데이터 추론 시스템**: 사용자 업로드 이미지에 대한 테스트 환경 구축, 예측값 처리
 >   5. **코드 생성 시스템**: 학습된 모델을 실행 가능한 파이썬 코드로 변환 (Github저장소에 업로드 처리) -> [업로드 예시 저장소 - scv-test repo](https://github.com/Kguswo/scv-test) , [업로드 예시 코드 - mnist.py](https://github.com/Kguswo/scv-test/blob/master/MNIST/mnist/model.py)
 
-> - ### 주요 구현 내용
+### 주요 구현 내용
 > - 1. 모델 빌더 시스템 - [neural_network_builder](https://github.com/Kguswo/SCV/tree/develop/ai/fastapi/model_test/neural_network_builder)
 >   - Pydantic을 활용한 강력한 레이어 검증 시스템으로 사용자 입력 오류 최소화
 >   - Conv2D와 Linear 레이어 사이에 필요시 자동으로 Flatten 레이어 삽입하여 사용자 편의성 향상 - [_insert_flatten_layer](https://github.com/Kguswo/SCV/blob/develop/ai/fastapi/model_test/neural_network_builder/builders/model_builder.py#L73)
@@ -281,7 +238,7 @@
 >   - 모델을 실행 가능한 독립적인 파이썬 코드로 변환 [model_code_generator.py](https://github.com/Kguswo/SCV/blob/develop/ai/fastapi/model_test/neural_network_builder/builders/model_code_generator.py)
 >   - GitHub 저장소로 내보내기 기능 지원 ([업로드 예시 저장소](https://github.com/Kguswo/scv-test), [업로드 예시 코드](https://github.com/Kguswo/scv-test/blob/master/MNIST/mnist/model.py))
 
-> - ### 주요 기술적 특징
+### 주요 기술적 특징
 > - 1. 객체지향 설계
 >   - 각 기능별로 명확한 책임을 가진 클래스로 시스템 구조화
 >   - 추상 클래스와 인터페이스를 활용한 확장성 있는 설계
@@ -304,6 +261,7 @@
 >            return v
 >     ```
 
+---
 
 **서현**
 
@@ -312,6 +270,8 @@
 > - `Tailwind CSS`와 `Tanstack Query`를 새롭게 배워 적용하며, 각 라이브러리들의 장점을 잘 살리기 위해 공부하며 성장할 수 있었습니다. 우선 `Tailwind CSS`의 경우 유틸리티 기반 접근 방식 덕분에 빠르고 일관된 스타일링이 가능하다는 것을 깨달았습니다. 특히 반복적인 스타일링 작업을 줄여 생산성을 높일 수 있었으며, 유지보수도 훨씬 간편했습니다. 둘째로 서버 상태와 클라이언트 상태를 관리하는 데 있어 `TanStack Query`의 캐싱 및 리페치 기능은 매우 유용했습니다. 특히, 데이터를 효율적으로 가져오고 상태를 관리할 수 있어서 복잡한 비동기 통신 로직을 단순화할 수 있었습니다. API 요청과 관련된 에러 처리와 재시도 기능도 쉽게 관리할 수 있었습니다.
 > - 프로젝트에서 가장 어려웠던 부분은 `드래그 앤 드롭` 기능이 들어간 `블록 코딩` 기능이었습니다. 드래그 앤 드롭 라이브러리를 커스텀하여 블록 코딩에 맞추어 작성하였으며, 동시에 백엔드와의 통신 시 필요한 데이터들만 전송할 수 있도록 `blockStore`에서 상태 관리를 함은 물론 `utils`로 `block-converter` 를 작성해 책임 분담에 힘을 주었습니다.
 > - 전체적으로 프론트엔드 파트를 혼자 담당하게 되면서 개발의 전 과정에서 주도적인 의사결정과 책임감 있는 구현이 필요했습니다. 이 과정에서 백엔드 팀원들과의 협업을 통해 `RESTful API 설계`에 참여하고, `api`구현 시 긴밀하게 소통하며 효율적인 커뮤니케이션 방법을 배웠습니다.
+
+---
 
 **민우**
 
@@ -335,6 +295,8 @@
 >   - RestTemplate 방식과 RestClient 방식에 대한 DI까지는 잘 구현이 됐는데 성능 테스트를 해보지 못한게 약간 아쉬웠고, 추후 Non-blocking과 비동기 방식을 지원하는 WebClient와 비교 테스트를 해보면 좋을 것 같다.
 >   - GithubService에서 토큰 처리 등의 로직이 섞여서 로직이 깔끔하게 진행되지는 않았다. 이 부분에 대한 명확한 역할 분담과 handler 등을 활용하면 더 깔끔하게 작성될 것 같다.
 
+---
+
 **예진**
 
 > - 목표: 쿠버네티스를 사용하여 파드들을 보다 효율적으로 관리하고, CPU서버와 GPU서버를 하나의 클러스터로 연결하여 서버 간 통신을 외부로 노출하지 않고 내부에서 관리하고자 하였다. 또한 각 사용자들의 ai모델을 개발하는 서비스인만큼 각각의 워크 스페이스를 컨테이너화 된 환경으로 제공하고자 하였다. 컨테이너 배포에 관해서는 argo rollout 을 사용하여 블루/그린 무중단 배포 환경을 구축하고자 하였다.
@@ -351,6 +313,8 @@
 >   - 파드 내부에서 통신이 어디까지 어떤 방식까지 가능한지 확인하는 등 문제의 원인을 찾기 위해 단계적으로 접근한 것이 큰 도움이 되었다. 함께 도와준 팀원들의 디버깅 방식에서 많이 배웠다.
 >   - 인프라에 관심이 있지만 네트워크에 대한 지식이 부족함을 알고 직접 부딪히기 위해 도전했던 만큼 각각의 개념을 몸소 체험하면서 공부할 수 있었다. 이론을 다시 읽을 때 어떤 부분을 이야기 하는지 더 잘 알 수 있고, 아키텍처 레퍼런스를 다양하게 찾아봐야겠다는 방향성을 찾았다.
 
+---
+
 **동엽**
 
 > - **목표**
@@ -364,6 +328,8 @@
 > - **배운 점**
 >   - **상속 활용**: `ResultDTO` 및 `ResultWithImageDTO` 구현으로 객체 구조 단순화 및 재사용성 강화
 >   - **다형성 적용**: `LayerDTO` 설계를 통해 유연한 계층 구조와 데이터 표현 방식 구현
+
+---
 
 **도형**
 
@@ -391,3 +357,61 @@
 > - **`FastAPI`**
 >   - 조금이나마 익숙해진 FastAPI에서의 예외처리와 Pydantic을 이용한 클래스 정의에 대해 추가로 배웠습니다.
 >   - 같이 api를 작성한 팀원의 폴더 구조 방식을 보면서 많은 것을 배웠습니다.
+
+
+## 팀원 구성
+
+<table style="width: 100%; text-align: center; border-collapse: collapse;">
+    <tr>
+        <td>
+            <a href="https://github.com/Kguswo" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/156046839?v=4" alt="@Kguswo" style="width:100px;"/>
+            </a>
+            <br>
+            <strong>김현재</strong>
+        </td>
+        <td>
+            <a href="https://github.com/clare-u" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/156143681?v=4" alt="@clare-u" style="width:100px;"/>
+            </a>
+            <br>
+            <strong>유서현</strong>
+        </td>
+        <td>
+            <a href="https://github.com/FickleBoBo" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/95597182?v=4" alt="@FickleBoBo" style="width:100px;"/>
+            </a>
+            <br>
+            <strong>육민우👑</strong>
+        </td>
+        <td>
+            <a href="https://github.com/yngbao97" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/156047141?v=4" alt="@yngbao97" style="width:100px;"/>
+            </a>
+            <br>
+            <strong>육예진</strong>
+        </td>
+        <td>
+            <a href="https://github.com/doongyeop" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/164111972?v=4" alt="@doongyeop" style="width:100px;"/>
+            </a>
+            <br>
+            <strong>이동엽</strong>
+        </td>
+        <td>
+            <a href="https://github.com/Dohyungh" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/156046498?v=4" alt="@Dohyungh" style="width:100px;"/>
+            </a>
+            <br>
+            <strong>한도형</strong>
+        </td>
+    </tr>
+    <tr>
+        <td><strong>AI/BE</strong></td>
+        <td><strong>FE/DESIGN</strong></td>
+        <td><strong>BE</strong></td>
+        <td><strong>INFRA/DESIGN</strong></td>
+        <td><strong>BE</strong></td>
+        <td><strong>AI/INFRA/FE</strong></td>
+    </tr>
+</table>
